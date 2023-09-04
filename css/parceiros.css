@@ -1,0 +1,43 @@
+.parceiros h2 {
+  margin-bottom: 60px;
+  box-sizing: border-box;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Poppins';
+  font-size: 48px;
+}
+
+.parceiros {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.parceiros ul {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.parceiros li {
+  padding: 32px;
+  display: flex;
+}
+
+.parceiros img {
+  margin: auto;
+}
+
+@media (max-width: 800px) {
+  .parceiros {
+    padding-bottom: 60px;
+  }
+  .parceiros h2 {
+    margin-bottom: 20px;
+  }
+  .parceiros ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

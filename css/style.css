@@ -1,0 +1,60 @@
+@import url('./header.css');
+@import url('./global.css');
+@import url('./introducao.css');
+@import url('./componentes.css');
+@import url('./bicicletas.css');
+@import url('./tecnologia.css');
+@import url('./parceiros.css');
+@import url('./depoimento.css');
+@import url('./seguros.css');
+@import url('./footer.css');
+@import url('./termos.css');
+@import url('./bicicletas-pagina.css');
+
+
+@media (max-width: 1200px) {
+.introdução h1 {
+  font-size: 48px;
+}
+.introdução p {
+  font-size: 18px;
+}
+}
+
+@media (max-width: 800px) {
+  .introdução {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .introdução h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  .header-menu {
+    gap: 20px;
+  }
+  .header-menu a {
+    background-color: #111111;
+    padding: 12px;
+    border-radius: 4px;
+  }
+  .header-menu a:hover {
+    background-color: #2e2e2e;
+  }
+  .introdução-bg {
+    background:#111111;
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-menu {
+    gap: 12px;
+  }
+  .header-menu a {
+    background-color: #111111;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 4px;
+  }
+}

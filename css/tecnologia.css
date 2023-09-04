@@ -1,0 +1,107 @@
+.tecnologia-bg {
+  background-color: #111111;
+}
+.tecnologia {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 40px;
+
+}
+
+  
+.tecnologia-conteudo span {
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(153, 149, 144);
+  text-transform: uppercase;
+}
+
+.tecnologia-conteudo h2 {
+  font-family: 'Poppins';
+  font-size: 32px;
+  color: antiquewhite;
+  margin-bottom: 32px;
+}
+
+.tecnologia-conteudo > p {
+  font-family: 'Roboto';
+  font-size: 24px;
+  color: antiquewhite;
+  margin-bottom: 24px;
+}
+
+.link {
+  display: inline-block;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.125;
+  color: #ffbf00;
+  text-transform: uppercase;
+  text-decoration: underline;
+  margin-bottom: 100px;
+  }
+
+.link:hover {
+  color: antiquewhite;
+}
+
+.tecnologia h3 {
+  color: rgb(153, 149, 144);
+}
+
+.tecnologia p {
+  color: antiquewhite;
+}
+
+.tecnologia-atributos {
+  gap: 40px;
+  width: auto;
+  display: flex;
+  }
+
+ .tecnologia-atributos h3 {
+       font-size: 32px;
+       margin-bottom: 8px;
+       width: max-content;
+    }
+
+  .tecnologia-atributos p {
+      font-size: 24px;
+      font-family: 'Poppins';
+   }
+
+   .tecnologia-atributos img {
+    width: 24px;
+    margin-bottom: 8px;
+   }
+
+.tecnologia-imagem img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+@media (max-width: 800px) {
+  .tecnologia {
+    grid-template-columns: 1fr;
+  }
+  .tecnologia-conteudo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .tecnologia-imagem {
+    display: none;
+  }
+  .tecnologia a {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tecnologia-atributos {
+    flex-direction: column;
+  }
+}
