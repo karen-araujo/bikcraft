@@ -1,0 +1,101 @@
+.orcamento {
+  background-color: white;
+  color: black;
+}
+
+.orcamento-form {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+  padding-bottom: 120px;
+  padding-top: 120px;
+  margin-left: 40px;
+}
+
+.orcamento-conteudo {
+  grid-column: 1;
+}
+
+.orcamento h2 {
+  text-transform: uppercase;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.orcamento-produto label {
+  font-family: 'Roboto';
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: inline-block;
+  background-color: rgb(233, 231, 228);
+  border-radius: 4px;
+  padding: 20px;
+  border: 0.5px solid;
+  cursor: pointer;
+}
+
+.orcamento-produto input:checked + label {
+  background-color: black;
+  color: antiquewhite;
+
+}
+
+.escolha-produto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1/-1;
+  align-content: start;
+  gap: 20px;
+
+
+}
+
+.dados-pessoais label,
+.orcamento-entrega label {
+    display: block;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+
+
+form input[type="text"], 
+input[type="email"] {
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 400;
+  background-color: rgb(233, 231, 228);
+  border: 0.5px solid;
+  padding: 5px;
+  border-radius: 4px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.escolha-produto {
+  display: none;
+}
+
+#orcamento-bicicleta h2, 
+#orcamento-seguro h2 {
+  font-size: 24px;
+}
+
+#bicicleta:checked ~ #orcamento-bicicleta,
+#seguro:checked ~ #orcamento-seguro {
+  display: block;
+}
+
+form .botao {
+  max-width: max-content;
+  grid-column: 3;
+  margin: 40px;
+  justify-content: end;
+  justify-items: end;
+  justify-self: end;
+  align-items: end;
+}

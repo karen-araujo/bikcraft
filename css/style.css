@@ -10,6 +10,9 @@
 @import url('./footer.css');
 @import url('./termos.css');
 @import url('./bicicletas-pagina.css');
+@import url('./nimbus.css');
+@import url('./contato.css');
+@import url('./orcamento.css');
 
 
 @media (max-width: 1200px) {
